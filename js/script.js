@@ -11,7 +11,11 @@ function guardarDatos(){
 
   localStorage.setItem('datosUsuario', usuarioJSON);
 
-  alert('Datos guardados con éxito')
+  Swal.fire({
+    title: "Datos guardados con exito",
+    text: "Tus datos han sido guardados correctamente",
+    icon: "success"
+  });
 
   document.getElementById('userName').innerHTML = "¡Hola, " + nombreUsuario + "!";
 
@@ -52,3 +56,29 @@ let usuarioJSON = localStorage.getItem('datosUsuario');
     }
     return rutina;
   }
+
+ function renderPosts() {
+    fetch('./js/ejercicios.json')
+    .then(respuesta => respuesta.json())
+    .then(data => {
+        let contenido = "";
+        for (const product of data) {
+            contenido += `<div class="col-md-3 mb-3">
+            <div class="card border-2">
+            <img src=${product.imagen} alt="${product.nombre}">
+            <div class="card-body text-center">
+                <h5 class="card-title">${product.categoria}</h5>
+                <p class="card-text">${product.nombre}</p>
+            </div>
+            </div>
+            </div>`;
+        }
+
+        document.getElementById("resultado2").innerHTML = contenido;
+    })
+    .catch(error => {
+        document.getElementById("resultado2").innerHTML = `<div class="alert alert-danger p-5 text-center" role="alert">Error! No se encuentra la URL a la que desea acceder!</div>`;
+    })
+}
+
+renderPosts(); 

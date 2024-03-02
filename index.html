@@ -51,6 +51,9 @@
         <h2> Calcularemos tu IMC y en base a eso te elegiremos una posible rutina</h2>
     </header>
     <main>
+      <div class="rutina1">
+        <h2 id="rutina">Tu rutina</h2>
+      </div>
       <div>
         <label for="peso">Peso (kg): </label>
         <input type="text" id="peso">
@@ -61,45 +64,20 @@
       </div>
       <button onclick="calcularIMC()">Calcular IMC</button>
       <div id="resultado">Resultado</div>
-<h2 id="rutina">Tu rutina</h2>
-<div class="card" style="width: 20rem;">
-    <img src="./images/perderPeso.jpg" class="card-img-top" alt="rutina">
-  <div class="card-body">
-    <h5 class="card-title tituloIMC">Rutina para perder peso</h5>
-    <p class="card-text ejercicios">Ejercicios</p>
-    <li>Carrera continua</li>
-    <li>Ciclismo</li>
-    <li>Entrenamiento HIIT</li>
-    <li>Ejercicios cardiovasculares</li>
-  </div>
-</div>
-<div class="card" style="width: 20rem;">
-  <img src="./images/mantenerPeso.avif" class="card-img-top" alt="rutina">
-<div class="card-body">
-  <h5 class="card-title tituloIMC">Rutina para mantener el peso</h5>
-  <p class="card-text ejercicios">Ejercicios</p>
-  <li>Caminata ligera</li>
-  <li>Natación</li>
-  <li>Yoga</li>
-  <li>Ejercicios de estiramiento</li>
-</div>
-</div>
-<div class="card" style="width: 20rem;">
-  <img src="./images/ganarPeso.jpg" class="card-img-top" alt="rutina">
-<div class="card-body">
-  <h5 class="card-title tituloIMC">Rutina para aumentar masa muscular</h5>
-  <p class="card-text ejercicios"><strong>Ejercicios</strong></p>
-  <li>Press de banca</li>
-  <li>Sentadilla</li>
-  <li>Dominadas</li>
-  <li>Fondos en paralelas</li>
-</div>
-</div>
+      <div class="cont">
+      <div class="col">
+        <div class="row">
+          <div id="resultado2"></div>
+        </div>
+      </div>
+    </div>
     </main>
     <footer>
 
     </footer>
-    <script src="./script.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="./js/ejercicios.json"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

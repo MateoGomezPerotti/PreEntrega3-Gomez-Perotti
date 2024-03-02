@@ -1,0 +1,14 @@
+[
+    {"id":1, "nombre":"Carrera continua", "imagen": "./images/perderPeso.jpg" , "categoria":"bajar de peso"},
+    {"id":2, "nombre":"Ciclismo", "imagen": "./images/perderPeso.jpg" , "categoria":"bajar de peso"},
+    {"id":3, "nombre":"Entrenamiento HIIT", "imagen": "./images/perderPeso.jpg" , "categoria":"bajar de peso"},
+    {"id":4, "nombre":"Ejercicios cardiovasculares", "imagen": "./images/perderPeso.jpg" , "categoria":"bajar de peso"},
+    {"id":5, "nombre":"Caminata ligera", "imagen": "./images/mantenerPeso.avif" , "categoria":"mantener de peso"},
+    {"id":6, "nombre":"Natación", "imagen": "./images/mantenerPeso.avif", "categoria":"mantener de peso"},
+    {"id":7, "nombre":"Yoga", "imagen": "./images/mantenerPeso.avif", "categoria":"mantener de peso"},
+    {"id":8, "nombre":"Ejercicios de estiramiento", "imagen": "./images/mantenerPeso.avif", "categoria":"mantener de peso"},
+    {"id":10, "nombre":"Press de banca", "imagen": "./images/ganarPeso.jpg", "categoria":"aumentar masa muscular"},
+    {"id":11, "nombre":"Sentadillas", "imagen": "./images/ganarPeso.jpg", "categoria":"aumentar masa muscular"},
+    {"id":12, "nombre":"Dominadas", "imagen": "./images/ganarPeso.jpg", "categoria":"aumentar masa muscular"},
+    {"id":13, "nombre":"Fondos en paralelas", "imagen": "./images/ganarPeso.jpg", "categoria":"aumentar masa muscular"}
+]
